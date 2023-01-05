@@ -23,7 +23,7 @@ p {
     font-family: 'Boogaloo';
     text-align: center;
     color: rgb(205, 109, 109);
-    font-size: 200%;
+    font-size: 150%;
 }
 main ul {
 
@@ -111,6 +111,13 @@ main ul img {
     grid-column: 1 / span 3;
 }
 
+.subtituloA {
+
+  font-family: 'Boogaloo';
+    text-align: center;
+    color: rgb(205, 109, 109);
+    font-size: 110%;
+}
 .subtitulo {
 
     grid-column: 1 / span 3;
@@ -137,9 +144,9 @@ footer {
         footer li {
 
     list-style: none;
-    width: 80px;
-    height: 80px;
-    margin: 0 50px;
+    width: 10vw;
+    height: 10vw;
+    margin: 20px;
     
     
         }
@@ -151,10 +158,14 @@ footer {
     
         }
         /* -----QUERY MEDIA-----*/
-        @media only screen and (min-width: 461px) and (max-width: 600px) {
+        @media only screen and (min-width: 200px) and (max-width: 600px) {
 
-    main ul {
+          footer li {
 
-        grid-template-columns:auto auto;
-        }
+            margin: 10px;
+          }
+          p {
+
+            font-size: 110%;
+          }
 }
